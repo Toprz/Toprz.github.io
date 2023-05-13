@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Przykład tła z obrazem w kafelkach i paskiem z tekstem</title>
+	<style>
+		html body {
+			background-image: url('https://i.imgur.com/GXzHOkD.jpg');
+			background-repeat: repeat;
+			background-position: top left;
+			background-size: cover;
+		}
+
+		.container {
+			width: 80%;
+			margin: 50px auto;
+			padding: 0 20px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			background-color: #000;
+			color: #777;
+			text-align: center;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		h1 {
+			font-size: 3rem;
+			margin-bottom: 20px;
+			font-family: 'Lobster', cursive;
+			color: #8B0000;
+			text-shadow: 2px 2px 4px #000000;
+		}
+
+		p {
+			font-size: 1.5rem;
+			line-height: 1.5;
+			font-family: 'Roboto', sans-serif;
+			color: #fff;
+			text-shadow: 1px 1px 2px #000000;
+			margin: 20px 0;
+		}
+
+		.button-container {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		button {
+			background-color: #8B0000;
+			color: #fff;
+			font-size: 1.2rem;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+			margin: 20px 10px;
+			text-transform: uppercase;
+			font-family: 'Montserrat', sans-serif;
+			text-decoration: none;
+		}
+
+		button:hover {
+			background-color: #fff;
+			color: #8B0000;
+			text-decoration: none;
+		}
+	</style>
+
+	<!-- Załadowanie fontów Google: Montserrat, Lobster, Roboto -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lobster&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<h1>Toperz</h1>
+		<div class="button-container">
+			<button>Przycisk</button>
+			<button>Przycisk</button>
+			<button>Przycisk</button>
+		</div>
+		<p>AAAaaaAAA</p>
+	</div>
+</body>
+</html>
